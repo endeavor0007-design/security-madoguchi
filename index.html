@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>社外の情シス窓口（セキュリティ）｜専任の情シスがいない中小企業へ</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.75;color:#1d2733;background:#f4f7fa}
+.demo{position:sticky;top:0;z-index:9;background:#b45309;color:#fff;text-align:center;font-weight:bold;font-size:14px;padding:6px 8px}
+header{background:#0f3d5e;color:#fff;padding:28px 16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header .wrap{padding:0}
+h1{font-size:24px;line-height:1.4;margin:0 0 10px}
+h2{font-size:21px;margin:0 0 12px;border-left:6px solid #0f3d5e;padding-left:10px;line-height:1.4}
+h3{font-size:18px;margin:16px 0 6px}
+section{background:#fff;margin:14px 0;padding:20px 0;border-radius:10px;position:relative}
+section .wrap{position:relative}
+.tag{position:absolute;right:8px;top:-12px;font-size:11px;color:#888}
+.btn{display:block;width:100%;min-height:52px;font-size:18px;font-weight:bold;border:0;border-radius:8px;background:#0f7b4a;color:#fff;padding:12px;cursor:pointer;text-align:center;text-decoration:none}
+.btn.sub{background:#0f3d5e}
+.note{font-size:14px;color:#555}
+.warn{background:#fff7e6;border:1px solid #f0c36d;border-radius:8px;padding:10px 12px;font-size:15px}
+.ok{background:#e8f6ee;border:1px solid #9ad2b3;border-radius:8px;padding:10px 12px;font-size:15px}
+input,select,textarea{width:100%;min-height:48px;font-size:17px;padding:8px 10px;border:1px solid #9aa7b4;border-radius:8px;background:#fff;font-family:inherit}
+label{display:block;font-weight:bold;margin:14px 0 4px}
+.radio label{display:flex;align-items:center;gap:10px;font-weight:normal;min-height:44px;margin:0}
+.radio input{width:24px;min-height:24px}
+.res{border:1px solid #d5dde5;border-radius:8px;margin:10px 0;padding:10px 12px}
+.lv{display:inline-block;min-width:44px;text-align:center;color:#fff;font-weight:bold;border-radius:4px;padding:0 8px;margin-right:6px;font-size:15px}
+.hi{background:#c0392b}.mid{background:#d68910}.lo{background:#2e86c1}
+.step{border-left:4px solid #9ab;margin:12px 0;padding:4px 0 4px 12px}
+.step b{color:#0f3d5e}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{border-bottom:1px solid #dde;padding:8px 4px;text-align:left;vertical-align:top}
+th{background:#eef3f7}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tabs button{flex:1;min-height:48px;font-size:16px;border:1px solid #0f3d5e;background:#fff;color:#0f3d5e;border-radius:8px;font-weight:bold;cursor:pointer}
+.tabs button.on{background:#0f3d5e;color:#fff}
+.pane{display:none}.pane.on{display:block}
+.vote{display:flex;align-items:center;gap:10px;border:1px solid #d5dde5;border-radius:8px;padding:8px 10px;margin:8px 0}
+.vote button{min-width:64px;min-height:44px;border:1px solid #0f7b4a;background:#fff;color:#0f7b4a;border-radius:8px;font-size:15px;cursor:pointer}
+.vote button.on{background:#0f7b4a;color:#fff}
+.vote span.t{flex:1}
+.ph{border:2px dashed #aab;border-radius:8px;padding:10px;color:#667;background:#fafafa;font-size:15px;margin:8px 0}
+footer{padding:20px 16px 40px;font-size:13px;color:#555}
+ul{padding-left:1.3em;margin:6px 0}
+#sent{display:none;margin-top:12px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+<p class="note" style="color:#bcd">従業員10〜50名・専任の情シスがいない会社へ</p>
+<h1>取引先から「セキュリティ対策は？」と聞かれて、困っていませんか。</h1>
+<p><b>御社のサイトとメールの弱点を無料で調べ、直し方をやさしい日本語でお伝えします。</b>専任の情シスがいない会社の「社外の情シス窓口」です。</p>
+<p style="font-weight:bold">無料 ／ 登録は約3分 ／ 御社の設定は一切変えません</p>
+<a class="btn" href="#signup">無料の外形診断を申し込む</a>
+<p class="note" style="color:#bcd">開発中のサービスです。最初は無料のお試しで、いただいたご要望をもとに改善します。</p>
+</div></header>
+
+<div class="wrap">
+
+<section id="why"><div class="wrap">
+<h2>こんな会社のためのものです</h2>
+<ul>
+<li>大手の取引先から、セキュリティのチェックシートや対策を求められた製造・建設の下請け会社</li>
+<li>IT・Web制作の小規模事業者</li>
+<li>経済産業省が準備している、サプライチェーン向けのセキュリティ評価制度（★3は自己評価。申請受付は2026年度末ごろ開始の予定）の準備を考えている会社</li>
+</ul>
+<p class="note">制度の内容や時期は変わることがあります。最新情報は経済産業省・IPAの発表をご確認ください。</p>
+</div></section>
+
+<section id="check"><div class="wrap">
+<h2>まずは無料の外形診断</h2>
+<p>自社サイトのURLと、メールのドメインを教えていただくだけ。外から見える情報だけを確認します。</p>
+<ul>
+<li>なりすましメール対策（専門用語では SPF／DKIM／DMARC）が設定されているか</li>
+<li>サイトの通信が暗号化されているか（SSL）</li>
+<li>ブラウザを守る設定（セキュリティヘッダ）があるか</li>
+<li>WordPressなど、サイトを作る仕組みの版が古くないか</li>
+</ul>
+<div class="ok"><b>やらないこと：</b>侵入テストや、こちらから攻撃的に調べる能動スキャンはしません。誰でも見られる公開情報のみを、受け身で確認します。</div>
+<p>下の<a href="#signup">順番待ち登録</a>でメールアドレスをお知らせください。ご登録の順に、サイトのURLとメールのドメインをうかがい、結果をメールでお送りします（無料）。</p>
+
+<div id="result">
+<h3>結果の例（架空の会社）</h3>
+<div class="res"><span class="lv hi">高</span><b>DMARCが未設定です</b><br>自社を名乗るなりすましメールが、取引先に届いてしまうおそれがあります。DNSの設定追加で改善できます。</div>
+<div class="res"><span class="lv hi">高</span><b>公開中のWordPressの版が古い可能性があります</b><br>既知の弱点が残っているかもしれません。更新をご検討ください。</div>
+<div class="res"><span class="lv mid">中</span><b>HSTSが設定されていません</b><br>通信が暗号化されない経路に誘導されるリスクが残ります。</div>
+<div class="res"><span class="lv mid">中</span><b>SPFが「緩い」設定です</b><br>送信を許可するサーバーの範囲が広すぎます。</div>
+<div class="res"><span class="lv lo">低</span><b>X-Content-Type-Options ヘッダがありません</b><br>設定1行で対応できる場合が多い項目です。</div>
+<p class="note">危険度は目安です。自社の事情に合わせた優先順位は、ご相談の中で一緒に確認します。</p>
+</div>
+</div></section>
+
+<section id="next"><div class="wrap">
+<h2>その先（開発中・順番待ち受付）</h2>
+<div class="step"><b>① Microsoft 365 の設定診断</b><br>読み取り専用。管理者の方の同意をいただいた範囲だけ確認します。</div>
+<div class="step"><b>② ★3自己評価の下書き ＋ 情報セキュリティ方針</b><br>取引先に提示する際の参考となる方針書の雛形を作ります。評価の合格を保証するものではなく、法律上の助言でもありません。就業規則・労務は扱いません（社会保険労務士などの専門家へ）。</div>
+<div class="step"><b>③ 月額の見張り</b><br>直した設定が元に戻っていないか確認し、自社ドメインのアカウント漏洩が見つかったら通知します。お使いの機器・ソフト（VPN・NAS・ホームページなど）に関係する緊急のセキュリティ情報が出たときも、該当するときだけ直し方つきでお知らせします（予定）。</div>
+<div class="step"><b>④ Copilot導入前の過剰共有の確認</b><br>見せるつもりのないファイルが、広く共有されていないかを確認します。</div>
+<p class="note">いずれも開発中です。最初は無料のお試しとして提供し、使ってみたご感想・ご要望を聞いて改善します。</p>
+</div></section>
+
+<section id="price"><div class="wrap">
+<h2>価格の目安（税抜・予定）</h2>
+<table>
+<tr><th>内容</th><th>予定価格</th></tr>
+<tr><td>外形診断</td><td>0円</td></tr>
+<tr><td>Microsoft 365 診断</td><td>0円</td></tr>
+<tr><td>対策（設定の直し方の案内）</td><td>1項目 5,000円／重要10項目パック 29,800円</td></tr>
+<tr><td>情報セキュリティ方針 ＋ ★3自己評価の下書き</td><td>19,800円</td></tr>
+<tr><td>月額の見張り</td><td>月 3,980円〜</td></tr>
+</table>
+<p class="note">予定です。変更する場合があります。お試し期間中は無料で、お申し込みを強制することはありません。</p>
+</div></section>
+
+<section id="trust"><div class="wrap">
+<h2>安心していただくために</h2>
+<ul>
+<li><b>要求する権限と理由を、すべてお見せする予定です。</b>不要な権限は求めません。</li>
+<li><b>まずは読み取り専用</b>から始める予定です。設定を勝手に変えることはしません。</li>
+<li><b>操作ログを確認できるようにする予定です。</b>何を見たかを、いつでも確認できます。</li>
+<li><b>同意はいつでも取り消せるようにする予定です。</b></li>
+</ul>
+<div class="warn"><b>できないこと：</b>24時間の侵害対応（被害が出た後の緊急対応）は行いません。被害が疑われるときは、IPA（情報処理推進機構）の相談窓口や、契約中のIT事業者・警察の相談窓口へご連絡ください。</div>
+<p class="note">本サービスは設定の確認と改善の支援であり、被害が起きないことを保証するものではありません。</p>
+</div></section>
+
+<section id="signup"><div class="wrap">
+<h2>順番待ち登録（無料）</h2>
+<p>準備ができ次第、お試しのご案内をお送りします。</p>
+<form id="f">
+<label for="cn">会社名（任意）</label><input id="cn" name="company" autocomplete="organization">
+<label for="em">メールアドレス（必須）</label><input id="em" name="email" type="email" required autocomplete="email">
+<label for="sz">従業員数</label>
+<select id="sz" name="size" required><option value="">選んでください</option><option>1〜9名</option><option>10〜20名</option><option>21〜50名</option><option>51名以上</option></select>
+<label for="pf">お使いのサービス</label>
+<select id="pf" name="platform" required><option value="">選んでください</option><option>Microsoft 365</option><option>Google Workspace</option><option>両方</option><option>どちらでもない／わからない</option><option value="__other_option__">その他</option></select>
+<label for="pfo">その他の場合のサービス名（任意）</label><input id="pfo" name="platform_other">
+<label>有料でも使いたいですか</label>
+<div class="radio"><label><input type="radio" name="pay" value="はい">はい</label><label><input type="radio" name="pay" value="内容次第">内容次第</label><label><input type="radio" name="pay" value="いいえ">いいえ</label></div>
+<label>取引先からセキュリティの要請はありますか</label>
+<div class="radio"><label><input type="radio" name="req" value="ある">ある</label><label><input type="radio" name="req" value="今はない">今はない</label></div>
+<label>お使いの機器・ソフトに関係する緊急のセキュリティ情報だけを、直し方つきで知らせてほしいですか</label>
+<p class="note">例：VPN・UTM（社外から社内につなぐ機器）、NAS（共有フォルダ）、Wi-Fiルーター、ホームページ（WordPressなど）、パソコンのOS。ご登録の機器に関係があるときだけ、「該当するかの確かめ方」と「直し方」をお送りします。関係のない情報は送りません。</p>
+<div class="radio"><label><input type="radio" name="alert" value="はい（有料でもよい）">はい（有料でもよい）</label><label><input type="radio" name="alert" value="はい（無料なら）">はい（無料なら）</label><label><input type="radio" name="alert" value="いいえ（自分たちで対応している）">いいえ（自分たちで対応している）</label><label><input type="radio" name="alert" value="何を使っているかわからない">何を使っているかわからない</label></div>
+<label for="worry">いま気になっていること・困っていること（任意）</label>
+<p class="note">例：社員のパソコンやスマホの管理、パスワードの使い回し、取引先から届いたチェックシート、メールの乗っ取り対策、生成AIの社内ルール、業務の効率化など。このサービスの範囲外でもかまいません。内容によっては、個別にご提案とお見積り（無料）をお送りします。</p>
+<textarea id="worry" name="worry" rows="4"></textarea>
+<p></p>
+<button class="btn" type="submit">プライバシーポリシーに同意して登録する</button>
+<div id="sent" class="ok">ご登録ありがとうございます。準備ができ次第、ご登録のメールアドレスにご連絡します。</div>
+<div id="err" class="warn" style="display:none">送信できませんでした。お手数ですが、時間をおいて再度お試しいただくか、下記のメールアドレスにご連絡ください。</div>
+<p class="note">ご登録の前に<a href="privacy.html">プライバシーポリシー</a>をご確認ください。ご案内とご相談への回答以外の目的には使いません。</p>
+</form>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>運営者について</h2>
+<p>運営者：大沼 亮太（個人）<br>お問い合わせ：<a href="mailto:endeavor0007@gmail.com">endeavor0007@gmail.com</a></p>
+<p class="note">特定商取引法に基づく表示は、有料での提供を始めるときに掲載します（現在は無料の順番待ち登録のみです）。</p>
+</div></section>
+</div>
+
+<footer>
+<div class="wrap">診断結果の例は架空の会社のもので、実在の会社・実績ではありません。経済産業省・IPA等の公的機関とは関係のない民間のサービスです（開発中）。</div>
+</footer>
+
+<script>
+var FORM='https://docs.google.com/forms/d/e/1FAIpQLSdA_AneakMZ_CTcXE3Z1ZtJLEbsJKJxZwaLXfCg5IyDHlI8JA/formResponse';
+function v(id){return document.getElementById(id).value.trim();}
+function r(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
+document.getElementById('f').onsubmit=function(e){
+  e.preventDefault();
+  var em=document.getElementById('em');em.value=em.value.replace(/[\s　]/g,'');
+  if(!em.checkValidity()){em.reportValidity();return;}
+  var b=this.querySelector('button[type=submit]');b.disabled=true;
+  var d=new URLSearchParams();
+  d.append('entry.1045205107',v('cn'));
+  d.append('entry.527795177',em.value);
+  d.append('entry.2016411037',v('sz'));
+  d.append('entry.1190493048',v('pf'));
+  if(v('pf')==='__other_option__')d.append('entry.1190493048.other_option_response',v('pfo')||'（未記入）');
+  d.append('entry.629056795',r('pay'));
+  d.append('entry.1564898245',r('req'));
+  d.append('entry.934442610',r('alert'));
+  d.append('entry.1775999323',v('worry'));
+  fetch(FORM,{method:'POST',mode:'no-cors',body:d}).then(function(){
+    document.getElementById('sent').style.display='block';
+    document.getElementById('sent').scrollIntoView({behavior:'smooth',block:'center'});
+  }).catch(function(){
+    b.disabled=false;document.getElementById('err').style.display='block';
+  });
+};
+</script>
+</body>
+</html>
