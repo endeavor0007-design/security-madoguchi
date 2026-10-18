@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SCS評価制度の★3とは？中小企業の準備チェック表｜社外の情シス窓口</title>
+<meta name="description" content="経済産業省のSCS評価制度（サプライチェーン強化に向けたセキュリティ対策評価制度）の★3を、専任の情シスがいない中小企業向けに解説。自己点検チェック表と準備の順番。">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.75;color:#1d2733;background:#f4f7fa}
+header{background:#0f3d5e;color:#fff;padding:28px 16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header .wrap{padding:0}
+h1{font-size:24px;line-height:1.4;margin:0 0 10px}
+h2{font-size:21px;margin:0 0 12px;border-left:6px solid #0f3d5e;padding-left:10px;line-height:1.4}
+h3{font-size:18px;margin:16px 0 6px}
+section{background:#fff;margin:14px 0;padding:20px 0;border-radius:10px}
+.btn{display:block;width:100%;min-height:52px;font-size:18px;font-weight:bold;border:0;border-radius:8px;background:#0f7b4a;color:#fff;padding:12px;text-align:center;text-decoration:none}
+.note{font-size:14px;color:#555}
+.warn{background:#fff7e6;border:1px solid #f0c36d;border-radius:8px;padding:10px 12px;font-size:15px}
+.ok{background:#e8f6ee;border:1px solid #9ad2b3;border-radius:8px;padding:10px 12px;font-size:15px}
+.step{border-left:4px solid #9ab;margin:12px 0;padding:4px 0 4px 12px}
+.step b{color:#0f3d5e}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{border-bottom:1px solid #dde;padding:8px 4px;text-align:left;vertical-align:top}
+th{background:#eef3f7}
+.chk{list-style:none;padding:0;margin:6px 0}
+.chk li{border:1px solid #d5dde5;border-radius:8px;margin:8px 0;padding:8px 12px}
+.chk label{display:flex;gap:10px;align-items:flex-start;font-weight:normal;min-height:44px;margin:0;cursor:pointer}
+.chk input{width:24px;height:24px;flex:none;margin-top:4px}
+.chk small{display:block;color:#555;font-size:14px;line-height:1.5}
+#score{font-weight:bold}
+footer{padding:20px 16px 40px;font-size:13px;color:#555}
+ul{padding-left:1.3em;margin:6px 0}
+a{color:#0b5c9e}
+.btn,.btn:visited{color:#fff}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+<p class="note" style="color:#bcd"><a href="index.html" style="color:#bcd">社外の情シス窓口（セキュリティ）</a> ／ 解説</p>
+<h1>SCS評価制度の「★3」とは。中小企業が今のうちにできる準備チェック</h1>
+<p>取引先から「SCS評価制度（★3）は取りますか」と聞かれる前に、どんな制度か・何から手をつけるかを、やさしい言葉でまとめました。</p>
+<p class="note" style="color:#bcd">運営者による解説です。公開日：2026年10月（制度の最新情報は下の出典でご確認ください）</p>
+</div></header>
+
+<div class="wrap">
+
+<section id="what"><div class="wrap">
+<h2>★3とは</h2>
+<p>SCS評価制度は、経済産業省と内閣官房 国家サイバー統括室が2026年3月に公表した制度構築方針に基づく、取引先の企業を含む「サプライチェーン」全体のセキュリティを底上げするための制度で、IPA（情報処理推進機構）が運営します。段階は★3〜★5があり、★3はその最初の段階です。</p>
+<ul>
+<li><b>水準：</b>広く知られた弱点を突く、一般的なサイバー攻撃への基礎的な対策（組織としての決まりごとと、システムの守り）。</li>
+<li><b>取り方：</b>自社で自己評価を書き、セキュリティ専門家が内容を確認して署名し、経営者の「適合している」という宣誓を添えて事務局に申請する流れ（専門家確認付きの自己評価）。申請方法の詳細は2026年10月ごろ公開予定のため、これは現時点の案内で、変わることがあります。</li>
+<li><b>有効期間：</b>IPAの図表では1年とされています（本文での明記はなく、未確定）。</li>
+<li><b>専門家：</b>情報処理安全確保支援士・公認情報セキュリティ監査人などの資格者など（ほかの資格も対象になる見込み）のうち、所定の研修を受けた人が想定されています。</li>
+</ul>
+<div class="warn">要求事項の一覧（Excel）はIPAが公開済みですが、これを読み解くための解説書・取得ガイドは<b>2026年10月ごろ公開予定</b>とされています。本ページの内容はその前の時点のものです。公開されたら更新します。</div>
+</div></section>
+
+<section id="when"><div class="wrap">
+<h2>対象と開始の時期</h2>
+<table>
+<tr><th>項目</th><th>いま分かっていること</th></tr>
+<tr><td>開始時期</td><td>経済産業省のFAQでは、★3・★4は<b>2027年3月ごろ（2026年度末ごろ）の運用開始</b>を予定。IPAの資料では、専門家の登録は2027年1月以降。</td></tr>
+<tr><td>申請・登録の費用</td><td><b>公表待ち</b>（未定。今後公開予定）。</td></tr>
+<tr><td>専門家に頼む費用</td><td><b>公表待ち</b>（研修事業者は2026年12月末ごろ公表予定）。</td></tr>
+<tr><td>対象になる会社</td><td>特定の業種・規模に限られず、取得を希望する組織が対象となる任意の制度と案内されています。取引先が取得を求めるかどうかは取引先ごとに異なり、現時点では<b>公表待ち</b>です。</td></tr>
+</table>
+<p class="note">「時期」「費用」は変わることがあります。断定できない点は「公表待ち」としています。</p>
+</div></section>
+
+<section id="check"><div class="wrap">
+<h2>自己点検チェック表（13項目）</h2>
+<div class="warn"><b>ご注意：</b>これは、一般的な基礎対策の<b>目安としての自己点検</b>です。★3の公式の要求事項そのものではなく、全部にチェックが入っても★3に適合するとは限りません。正式な項目はIPAの「要求事項・評価基準」でご確認ください。</div>
+<p>当てはまるものにチェックを入れてください（この画面の中だけで数え、送信はされません）。</p>
+<ul class="chk" id="list">
+<li><label><input type="checkbox"><span>経営者が「情報セキュリティに取り組む」と決め、担当者が決まっている<small>名前を挙げられる担当者がいる、が目安。</small></span></label></li>
+<li><label><input type="checkbox"><span>社内のパソコン・スマホ・サーバーなどの機器の一覧がある<small>誰がどの機器を使っているか分かる状態。</small></span></label></li>
+<li><label><input type="checkbox"><span>パソコンのOSやソフトの更新（アップデート）を、定期的に行っている<small>自動更新でも可。止まっている機器がないか。</small></span></label></li>
+<li><label><input type="checkbox"><span>ウイルス対策ソフト（またはそれに代わる仕組み）を全てのパソコンに入れている</span></label></li>
+<li><label><input type="checkbox"><span>メールやクラウドなど、外から入れるサービスに多要素認証（確認コードなど）を設定している<small>特に管理者アカウント。</small></span></label></li>
+<li><label><input type="checkbox"><span>パスワードの使い回しをしない決まりがあり、共有アカウントは最小限にしている</span></label></li>
+<li><label><input type="checkbox"><span>VPN機器・ルーター・NASなど、外から見える機器の更新と設定を確認している<small>初期パスワードのまま使っていない。</small></span></label></li>
+<li><label><input type="checkbox"><span>自社のメールになりすまし対策（SPF・DKIM・DMARC）を設定している</span></label></li>
+<li><label><input type="checkbox"><span>自社サイトはSSL（https）で、サイトを作る仕組み（WordPressなど）の版を最新にしている</span></label></li>
+<li><label><input type="checkbox"><span>重要なデータのバックアップを取り、元に戻せるか試したことがある</span></label></li>
+<li><label><input type="checkbox"><span>退職・異動の際に、アカウントや権限を速やかに削除・変更する手順がある</span></label></li>
+<li><label><input type="checkbox"><span>従業員に、不審なメールの扱いなど基本的なセキュリティの教育を年に1回以上している</span></label></li>
+<li><label><input type="checkbox"><span>事故が疑われるときの連絡先と最初の動き（誰に連絡するか）を紙などで決めている<small>IPAの相談窓口、契約中のIT事業者、警察など。</small></span></label></li>
+</ul>
+<p id="score" class="ok">チェックした数：0 ／ 13</p>
+<p class="note">チェックが少なくても問題ではありません。次の「準備の順番」で、少ない手間で効果の大きいものから進めましょう。</p>
+</div></section>
+
+<section id="order"><div class="wrap">
+<h2>準備の順番（目安）</h2>
+<div class="step"><b>① 外から見える所を直す</b><br>メールのなりすまし対策・サイトのSSL・ルーターやVPN機器の更新。費用が小さく、取引先からも見えやすい所です。</div>
+<div class="step"><b>② 多要素認証とパスワード</b><br>メール・クラウドの管理者から先に。設定だけで済むものが多いです。</div>
+<div class="step"><b>③ 機器の一覧とバックアップ</b><br>何を使っているか分からないと、守れません。表1枚で構いません。</div>
+<div class="step"><b>④ 決まりごとを紙にする</b><br>担当者・退職時の手順・事故のときの連絡先。短い文書で十分です。</div>
+<div class="step"><b>⑤ 公式資料が出たら突き合わせる</b><br>解説書・取得ガイド（2026年10月ごろ公開予定）で、正式な要求事項と自社の状況を見比べます。専門家の確認が要る点にご注意ください。</div>
+<p class="note">本ページは一般的な情報提供で、法律上の助言ではありません。評価の合格や、被害が起きないことを保証するものでもありません。就業規則・労務は社会保険労務士などの専門家へご相談ください。</p>
+</div></section>
+
+<section id="src"><div class="wrap">
+<h2>出典（一次資料）</h2>
+<ul>
+<li><a href="https://www.ipa.go.jp/security/scs/details.html">IPA「SCS評価制度の詳細情報」</a>（★3の流れ・有効期間・専門家の要件）</li>
+<li><a href="https://www.ipa.go.jp/security/scs/faq.html">IPA「よくある質問」</a>（開始時期・費用は未定・解説書の公開予定）</li>
+<li><a href="https://www.ipa.go.jp/security/scs/requirements-criteria.html">IPA「要求事項・評価基準」</a>（★3・★4のExcel、解説書は2026年10月ごろ公開予定）</li>
+<li><a href="https://www.meti.go.jp/press/2025/03/20260327001/20260327001.html">経済産業省「制度構築方針」公表（2026年3月27日）</a></li>
+</ul>
+<p class="note">確認日：2026年10月18日。最新の内容は上記の公式ページでご確認ください。</p>
+</div></section>
+
+<section id="cta"><div class="wrap">
+<h2>御社の「外から見える所」を無料で調べます</h2>
+<p>チェック表の①にあたる、メールのなりすまし対策・サイトのSSL・セキュリティ設定を、外から見える情報だけで調べ、直し方をやさしい日本語でお伝えします（無料・順番待ち登録・開発中のサービス）。この診断は★3に適合しているかを判定するものではありません。</p>
+<a class="btn" href="index.html#signup">無料の順番待ちに登録する</a>
+<p class="note">ご登録の前に<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+</div></section>
+</div>
+
+<footer>
+<div class="wrap">本ページは経済産業省・IPA等の公的機関とは関係のない民間（運営者個人）による解説です。</div>
+</footer>
+
+<script>
+var cs=document.querySelectorAll('#list input');
+function upd(){var n=0;for(var i=0;i<cs.length;i++)if(cs[i].checked)n++;document.getElementById('score').textContent='チェックした数：'+n+' ／ '+cs.length;}
+for(var i=0;i<cs.length;i++)cs[i].onchange=upd;
+</script>
+<script data-goatcounter="https://security-madoguchi.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
