@@ -6,5 +6,5 @@
 
 ## ページ
 
-- [トップ（できること・価格の目安・順番待ち登録）](https://endeavor0007-design.github.io/security-madoguchi/)
-- [SCS評価制度の★3とは？中小企業の準備チェック表](https://endeavor0007-design.github.io/security-madoguchi/scs3.html)
+- [トップ（できること・価格の目安・順番待ち登録）](https://cocreturn.com/security-madoguchi/)
+- [SCS評価制度の★3とは？中小企業の準備チェック表](https://cocreturn.com/security-madoguchi/scs3.html)
