@@ -33,6 +33,8 @@ input,select,textarea{width:100%;min-height:48px;font-size:17px;padding:8px 10px
 label{display:block;font-weight:bold;margin:14px 0 4px}
 .radio label{display:flex;align-items:center;gap:10px;font-weight:normal;min-height:44px;margin:0}
 .radio input{width:24px;min-height:24px}
+.more{margin:18px 0 8px;border:1px solid #ccd;border-radius:6px;padding:4px 12px}
+.more summary{cursor:pointer;font-weight:bold;min-height:44px;display:flex;align-items:center}
 .res{border:1px solid #d5dde5;border-radius:8px;margin:10px 0;padding:10px 12px}
 .lv{display:inline-block;min-width:44px;text-align:center;color:#fff;font-weight:bold;border-radius:4px;padding:0 8px;margin-right:6px;font-size:15px}
 .hi{background:#c0392b}.mid{background:#d68910}.lo{background:#2e86c1}
@@ -149,13 +151,15 @@ ul{padding-left:1.3em;margin:6px 0}
 <h2>順番待ち登録（無料）</h2>
 <p>準備ができ次第、お試しのご案内をお送りします。</p>
 <form id="f">
-<label for="cn">会社名（任意）</label><input id="cn" name="company" autocomplete="organization">
 <label for="em">メールアドレス（必須）</label><input id="em" name="email" type="email" required autocomplete="email">
-<label for="sz">従業員数</label>
+<label for="sz">従業員数（必須）</label>
 <select id="sz" name="size" required><option value="">選んでください</option><option>1〜9名</option><option>10〜20名</option><option>21〜50名</option><option>51名以上</option></select>
-<label for="pf">お使いのサービス</label>
+<label for="pf">お使いのサービス（必須）</label>
 <select id="pf" name="platform" required><option value="">選んでください</option><option>Microsoft 365</option><option>Google Workspace</option><option>両方</option><option>どちらでもない／わからない</option><option value="__other_option__">その他</option></select>
-<label for="pfo">その他の場合のサービス名（任意）</label><input id="pfo" name="platform_other">
+<div id="pfob" hidden><label for="pfo">その他の場合のサービス名（任意）</label><input id="pfo" name="platform_other"></div>
+<details class="more">
+<summary>任意の質問（5問・答えると、ご案内の内容の参考にします）</summary>
+<label for="cn">会社名（任意）</label><input id="cn" name="company" autocomplete="organization">
 <label>有料でも使いたいですか</label>
 <div class="radio"><label><input type="radio" name="pay" value="はい">はい</label><label><input type="radio" name="pay" value="内容次第">内容次第</label><label><input type="radio" name="pay" value="いいえ">いいえ</label></div>
 <label>取引先からセキュリティの要請はありますか</label>
@@ -166,6 +170,7 @@ ul{padding-left:1.3em;margin:6px 0}
 <label for="worry">いま気になっていること・困っていること（任意）</label>
 <p class="note">例：社員のパソコンやスマホの管理、パスワードの使い回し、取引先から届いたチェックシート、メールの乗っ取り対策、生成AIの社内ルール、業務の効率化など。このサービスの範囲外でもかまいません。内容によっては、ご提案とお見積り（見積りは無料・お受けできない場合があります）をお送りします。</p>
 <textarea id="worry" name="worry" rows="4"></textarea>
+</details>
 <p></p>
 <button class="btn" type="submit">プライバシーポリシーに同意して登録する</button>
 <div id="sent" class="ok">ご登録ありがとうございます。準備ができ次第、ご登録のメールアドレスにご連絡します。</div>
@@ -189,6 +194,7 @@ ul{padding-left:1.3em;margin:6px 0}
 
 <script>
 var FORM='https://docs.google.com/forms/d/e/1FAIpQLSdA_AneakMZ_CTcXE3Z1ZtJLEbsJKJxZwaLXfCg5IyDHlI8JA/formResponse';
+document.getElementById('pf').onchange=function(){document.getElementById('pfob').hidden=this.value!=='__other_option__';};
 function v(id){return document.getElementById(id).value.trim();}
 function r(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
 document.getElementById('f').onsubmit=function(e){
